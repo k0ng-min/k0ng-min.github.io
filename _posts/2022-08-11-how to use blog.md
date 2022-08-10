@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Welcome to Jekyll!"
+title:  "how to use blog"
 ---
 
 # 블로그 사용법
