@@ -1,3 +1,10 @@
+---
+layout: single
+title: "how to use blog"
+---
+
+
+
 # 블로그 사용법
 * [github로 이동](https://github.com/k0ng-min/k0ng-min.github.io)
 * [github 블로그 만들기](https://www.youtube.com/watch?v=ACzFIAOsfpM&t=617s) 영상 참조
@@ -21,27 +28,3 @@
 * __config.yml에서 대부분의 수정사항이 발생
 * minimal_mistakes_skin이라는 코드에서 변경 가능
 
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
