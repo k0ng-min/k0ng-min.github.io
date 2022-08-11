@@ -110,9 +110,6 @@ author:
   location         : "South Korea"
   email            : "skmin3735@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "skmin3735@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://k0ng-min.github.io/"
