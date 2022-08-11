@@ -1,0 +1,99 @@
+# CLASS와 ID  
+
+## class란?
+* html : <태그 이름 class=”클래스명”>
+* css : 맨 앞에 마침표(.)을 찍어둔 뒤 클래스명을 입력하고 중괄호를 열어 꾸며주기  
+
+## id란?
+* html : <태그 이름 id=”아이디값”>
+* css : 맨 앞에 샾(#)을 써준 뒤 아이디값을 입력하고 중괄호를 열어 꾸며주기  
+
+## class와 id의 차이점
+1. 클래스는 동일한 클래스명을 여러 곳에서 중복 사용 가능하지만 한 개의 아이디는 페이지에서 딱 한 번만 사용
+2. 클래스는 한 요소에 여러 개의 클래스명이 적용될 수 있으나 아이디는 한 요소에 한 아이디만 적용이 가능함
+
+[class와 id의 개념 및 차이점](https://choseongho93.tistory.com/60)  
+
+
+
+# div 태그  
+* div 태그 = html에서 웹페이지의 내용을 구분하는데 사용되며 특정 데이터나 기능에 대한 섹션을 만들 수 있기에 유용한 태그  
+
+-> css 속성을 이용한 div 꾸미기
+
+## border
+1. border 테두리
+    1. border-style : 테두리의 스타일을 정의함
+        1. none, hidden, solid, dotted, dashed, double, groove, ridge, inset, outset 등의 속성이 있음
+    2. border-width : 테두리의 굵기를 정의함
+    3. border-color : 테두리의 색깔을 정의함 ex) border : 1px solid #111111;
+    4. border-top, border-bottom, border-left, border-right로 적용가능
+    5.  border의 style, width, color는 위, 오른쪽, 아래, 왼쪽 테두리 순서대로 너비, 스타일, 색상을 지정할 수 있음
+
+
+[css 테두리(border)](http://jun.hansung.ac.kr/CWP/css/CSS%20Border.html)  
+
+
+## margin와 padding
+1. margin, padding
+    1.  margin과 padding은 바깥쪽 여백과 안쪽 여백을 의미함
+    2. 숫자 뒤에 단위를 표시하여 적음 / 방향마다 여백을 다르게 설정할 수 있음
+    
+    ex) 가운데 정렬
+    
+    text-align : center;
+    
+    margin-left : auto;
+    
+    margin-right : auto;
+
+- 태그에는 content, padding, border, margin이 있음
+- 위 오른쪽 아래 왼쪽 순으로 속성값을 써주면 됨
+- padding과 border, margin은 width에 포함되지 않음
+- margin은 다른 태그와의 거리
+
+[margin과 padding의 차이](https://gorokke.tistory.com/61)
+
+
+
+## width와 height
+* width와 height
+    * width 속성은 가로 길이, height 속성은 세로 길이를 의미함
+    * <span> 태그 등 inline 요소는 적용 되지 않음
+
+[css height, width, max](https://www.w3schools.com/css/css_dimension.asp)  
+
+
+
+# css 그림자 표현하기 - box shadow  
+
+box shadow : (offset-x) (offset-y) (blur-radius) (spread-radius) (color)
+
+1. offset-x는 가로로 얼마나 갈 것인가(수평거리)
+    
+      → 양수 값은 요소의 오른쪽으로 그림자가 표시 / 음수 값은 요소의 왼쪽으로 그림자가 표시
+    
+2. offset-y는 세로로 얼마나 갈 것인가(수직거리)
+    
+    → 양수 값은 요소의 아래쪽으로 그림자가 표시 / 음수 값은 요소의 위쪽으로 그림자가 표시
+    
+3. blur-radius : 그림자의 흐림 정도
+    
+    =  크면 클수록 그림자 테두리가 흐려지므로 크기는 더 커지고 색은 더 밝아짐
+    
+    1. 음수 사용 불가
+    2. 값을 설정하지 않으면 0이 되어 테두리가 선명해짐
+4. spread-radius : 그림자의 퍼짐 정도
+    
+    =  양수 값은 그림자가 더 커지고 확산하며 음수 값은 그림자가 줄어듬
+    
+    1. 기본값은 0으로 그림자와 요소 크기가 동일함
+5. color : 기본값은 브라우저에 따라 다름
+    
+    = rgba(#, #, #, #)
+    
+    1. r은 red, g는 green, b는 blue이며 0에서 255로 갈수록 밝아짐
+    2. 마지막 #은 투명도이며 1이 가장 탁하고 작아질수록 투명해짐
+    
+    
+[box-shadow](https://developer.mozilla.org/ko/docs/Web/CSS/box-shadow)
