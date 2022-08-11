@@ -4,6 +4,9 @@ title: "how to use blog"
 category: "blog"
 tag: github
 toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 
@@ -23,6 +26,12 @@ toc: true
         * 여러 개의 태그를 추가할 때는 tag: [tag1, tag2, tag3] 로 추가하면 됨
 
     * 맨 위 상단에 toc: true를 추가하면 글의 목차를 볼 수 있음
+
+    * blog 포스팅을 들어갔을 때 왼쪽 프로필이 안 뜨게 하려면 맨 위 상단에 author_profile: false 추가하기
+
+    * 왼쪽에 sidebar를 추가하고 싶다면 맨 위 상단에 sidebar: (엔터 하고) nav: "docs" 입력하기
+
+    * 포스팅한 블로그가 search기능에 노출 되고 싶지 않다면 search: false를 작성하기
 
     * 맨 상단에 속성값 넣기 [jekyll 이동](https://jekyllrb.com/docs/posts/)
         * 편안한 jekyell을 위한 [markdown 문법](https://teddylee777.github.io/jekyll/Jekyll-%EC%82%AC%EC%9A%A9%EC%9D%84-%EC%9C%84%ED%95%9C-markdown-%EB%AC%B8%EB%B2%95)
