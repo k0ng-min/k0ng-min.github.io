@@ -2,7 +2,7 @@
 layout: single
 title: "how to use blog"
 category: "blog"
-tag: github
+tag: blog
 toc: true
 author_profile: false
 sidebar:
