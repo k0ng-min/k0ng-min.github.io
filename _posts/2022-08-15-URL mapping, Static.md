@@ -17,7 +17,7 @@ sidebar:
 * python manage.py startapp 앱이름
     * 다음 코드를 통해 앱이름이라는 폴더 생성  
     
-* 프로젝트의 ettings.py에 있는 INSTALLED_APP에 생성한 앱이름을 추가하기
+* 프로젝트의 settings.py에 있는 INSTALLED_APP에 생성한 앱이름을 추가하기
     
     
 ## views.py 안에 함수 작성하기  
