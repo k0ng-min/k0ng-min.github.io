@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "class와 id / div 태그 / box-shadow"
-category: "html/css"
-tag: [html, css, class, id, div, box-shadow]
+title: "Python for Django"
+category: "django", "codelion"
+tag: [django, dictionary, python, class, module, package, library, error]
 toc: true
 author_profile: false
 sidebar:
