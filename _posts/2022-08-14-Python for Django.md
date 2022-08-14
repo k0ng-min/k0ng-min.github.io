@@ -1,3 +1,14 @@
+---
+layout: single
+title: "class와 id / div 태그 / box-shadow"
+category: "django", "codelion"
+tag: [django, dictionary, python, class, module, package, library, error]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # Python for Django  
 
 * 웹 프레임워크<br/>
