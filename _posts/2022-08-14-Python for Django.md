@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "class와 id / div 태그 / box-shadow"
+title: "Python for Django"
 category: "django", "codelion"
 tag: [django, dictionary, python, class, module, package, library, error]
 toc: true
