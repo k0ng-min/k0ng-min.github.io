@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Python for Django"
-category: "django", "codelion"
+category: "django"
 tag: [django, dictionary, python, class, module, package, library, error]
 toc: true
 author_profile: false
