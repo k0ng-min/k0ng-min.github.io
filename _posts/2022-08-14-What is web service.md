@@ -1,3 +1,14 @@
+---
+layout: single
+title: "What is web service"
+category: "django", "codelion"
+tag: [web, url, http, html, server, web framework]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # What is Web Service  
 
 
