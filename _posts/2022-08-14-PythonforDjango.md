@@ -6,7 +6,7 @@ tag: [django, dictionary, python, class, module, package, library, error]
 toc: true
 author_profile: false
 sidebar:
-    nav: "docs"
+    nav: docs
 ---
 
 # Python for Django  
