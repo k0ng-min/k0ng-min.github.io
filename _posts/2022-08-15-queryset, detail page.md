@@ -1,3 +1,14 @@
+---
+layout: single
+title: "queryset, detail page"
+category: "django"
+tag: [django, queryset, id, media, database]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # QuerySet  
 
 
