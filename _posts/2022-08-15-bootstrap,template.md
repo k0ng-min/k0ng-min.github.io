@@ -27,25 +27,25 @@ sidebar:
     
 ### HTML 문서에 CSS를 사용하는 3가지 방법
 1. 외부 스타일 시트
-    * 홈페이지 전체의 스타일을 일관성있게 유지하며 변경시에도 일괄적으로 변경되므로 홈페이지 제작의 효율성을 극대화 할 수 있음.
-
+    * 홈페이지 전체의 스타일을 일관성있게 유지하며 변경시에도 일괄적으로 변경되므로 홈페이지 제작의 효율성을 극대화 할 수 있음
+    <code>
      <link rel="stylesheet" type="text/css" href="mystyle.css"><br/>
     # stylesheet: 외부 스타일시트를 참조
- 
+    </code>
 
 
 2. 내부 스타일 시트
     * html 문서마다 스타일을 매번 지정해 주어야 하지만, 한 문서에만 해당되는 스타일을 지정할 때 사용하면 됨
-
+     <code>
      <style type="text/css">
-
+     </code>
 
 
 3. HTML 태그 내에 스타일 지정
     * 스타일을 적용하고 싶은 html 태그 안에서 정의하는 방법
-
+   <code>
    <p style="color:gray;">이 문단의 색상은 회색으로 지정됩니다.</p>
-
+   </code>
 
 
 # template 상속  
