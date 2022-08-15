@@ -14,10 +14,6 @@ sidebar:
 * 미리 만들어놓은 웹사이트의 꾸밈요소 즉 css를 가져다써서 웹서비스에서 쉽게 이용할 수 있음  
 * [Bootstrap](https://getbootstrap.com/)
 
-> Jekyll에서 사용되는 liquid는 {{와 }}를 escape 문자로 사용하는데, <br/>
-> md문서에 {{, }}가 있는 경우 에러 메시지를 출력함.<br/>
-> 따라서 다음과 같이 여는 중괄호가 시작하기 전에 raw를, 뒤에는 endraw를 추가하는 해결책을 강구함<br/>
-> [[Github블로그/Jekyll] Liquid Exception: Liquid syntax error 해결](https://iamheesoo.github.io/blog/gitblog-sol-jekyll02)
 
 
 ## Bootstrap 설정  
@@ -32,24 +28,24 @@ sidebar:
 ### HTML 문서에 CSS를 사용하는 3가지 방법
 1. 외부 스타일 시트
     * 홈페이지 전체의 스타일을 일관성있게 유지하며 변경시에도 일괄적으로 변경되므로 홈페이지 제작의 효율성을 극대화 할 수 있음.
-```html
-     <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+     <link rel="stylesheet" type="text/css" href="mystyle.css"><br/>
     # stylesheet: 외부 스타일시트를 참조
-```    
+ 
 
 
 2. 내부 스타일 시트
     * html 문서마다 스타일을 매번 지정해 주어야 하지만, 한 문서에만 해당되는 스타일을 지정할 때 사용하면 됨
-```html
+
      <style type="text/css">
-```   
+
 
 
 3. HTML 태그 내에 스타일 지정
     * 스타일을 적용하고 싶은 html 태그 안에서 정의하는 방법
-```html
+
    <p style="color:gray;">이 문단의 색상은 회색으로 지정됩니다.</p>
-```
+
 
 
 # template 상속  
