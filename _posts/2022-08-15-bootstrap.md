@@ -2,7 +2,7 @@
 layout: single
 title: "bootstrap/template상속"
 category: "django"
-tag: [django, bootstrap, css, template, load]
+tag: [django, bootstrap, css, template]
 toc: true
 author_profile: false
 sidebar:
@@ -53,7 +53,7 @@ sidebar:
 
 1. base.html에 중복되는 코드 밀어넣기 ex) heade, head, footer
 
-2. base.html에서 개별적인 코드가 들어가는 부분에 {% block content %}, {% endblock %} 추가하기
+2. base.html에서 개별적인 코드가 들어가는 부분에 다음 내용 추가하기
 
 ```python
     # 코드가 공통으로 들어가는 부분
@@ -63,13 +63,13 @@ sidebar:
     # 코드가 공통으로 들어가는 부분
 ```  
 
-3. 개별적인 html에 중복되는 코드 지운 후 {% extend 'base.html' %}, {% block content %}, {% endblock %} 추가하기  
+3. 개별적인 html에 중복되는 코드 지운 후 다음 내용 추가하기  
 
 ```python
    {% extend 'base.html' %}
     # extend를 통해 base.html의 코드 상속
    {% block content %}
+    # content 이름 변경 
     # 개별적인 코드가 들어가는 부분 / 각각의 html에서 서로 다른 코드가 들어가는 부분
    {% endblock %}
 ```  
-* {% block content %}에서 content이름을 바꿀 수 있음
