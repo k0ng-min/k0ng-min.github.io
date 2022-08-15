@@ -107,7 +107,7 @@ sidebar:
 
 * home.html에 static 파일을 불러오기 위해서는 
     1. home.html 맨상단에 {% raw %}{% load static %}{% endraw %} 추가하기 
-        * {% %}를 template 언어라고 칭함  
+        * {% raw %}{% %}{% endraw %}를 template 언어라고 칭함  
         
         
     2. static 파일을 head 부분에 link하기
