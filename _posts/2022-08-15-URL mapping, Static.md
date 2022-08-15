@@ -1,3 +1,14 @@
+---
+layout: single
+title: "URL mapping, Static"
+category: "django"
+tag: [django, url mapping, static]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # URL Mapping  
 
 ## Django Application 생성  
