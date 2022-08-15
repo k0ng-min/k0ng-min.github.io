@@ -53,17 +53,17 @@ sidebar:
 
 1. base.html에 중복되는 코드 밀어넣기 ex) heade, head, footer
 
-2. base.html에서 개별적인 코드가 들어가는 부분에 {% block content %}, {% endblock %} 추가하기
+2. base.html에서 개별적인 코드가 들어가는 부분에 {% raw %}{{% block content %}, {% endblock %}}{% endraw %} 추가하기
 
 ```python
     # 코드가 공통으로 들어가는 부분
     {% raw %}{% block content %}{% endraw %}
     # 개별적인 코드가 들어가는 부분 / 각각의 html에서 서로 다른 코드가 들어가는 부분
-    {% raw %}{% endblock %}{% endraw %}
+    {% endblock %}{% endraw %}
     # 코드가 공통으로 들어가는 부분
 ```  
 
-3. 개별적인 html에 중복되는 코드 지운 후 {% extend 'base.html' %}, {% block content %}, {% endblock %} 추가하기  
+3. 개별적인 html에 중복되는 코드 지운 후 {% raw %}{{% extend 'base.html' %}, {% block content %}, {% endblock %}}{% endraw %} 추가하기  
 
 ```python
     {% raw %}{% extend 'base.html' %}{% endraw %}
@@ -72,4 +72,4 @@ sidebar:
     # 개별적인 코드가 들어가는 부분 / 각각의 html에서 서로 다른 코드가 들어가는 부분
     {% raw %}{% endblock %}{% endraw %}
 ```  
-* {% block content %}에서 content이름을 바꿀 수 있음
+* {% raw %}{% block content %}{% endraw %}에서 content이름을 바꿀 수 있음
