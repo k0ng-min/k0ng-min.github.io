@@ -1,3 +1,14 @@
+---
+layout: single
+title: "bootstrap/template상속"
+category: "django"
+tag: [django, bootstrap, css, template, ]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # Bootstrap  
  
 * 미리 만들어놓은 웹사이트의 꾸밈요소 즉 css를 가져다써서 웹서비스에서 쉽게 이용할 수 있음  
