@@ -28,7 +28,6 @@ sidebar:
 ### HTML 문서에 CSS를 사용하는 3가지 방법
 1. 외부 스타일 시트
     * 홈페이지 전체의 스타일을 일관성있게 유지하며 변경시에도 일괄적으로 변경되므로 홈페이지 제작의 효율성을 극대화 할 수 있음
-    * <link rel="stylesheet" type="text/css" href="mystyle.css"<br/>
     * stylesheet: 외부 스타일시트를 참조
     
 
@@ -41,7 +40,6 @@ sidebar:
 
 3. HTML 태그 내에 스타일 지정
     * 스타일을 적용하고 싶은 html 태그 안에서 정의하는 방법
-    * <p style="color:gray;"이 문단의 색상은 회색으로 지정됩니다.</p>
 
 
 
