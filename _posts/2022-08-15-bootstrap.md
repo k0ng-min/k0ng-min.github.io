@@ -2,7 +2,7 @@
 layout: single
 title: "bootstrap/template상속"
 category: "django"
-tag: [django, bootstrap, css, template]
+tag: [django, bootstrap, css, template, load]
 toc: true
 author_profile: false
 sidebar:
