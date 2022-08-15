@@ -59,7 +59,7 @@ sidebar:
     # 코드가 공통으로 들어가는 부분
     {% raw %}{% block content %}{% endraw %}
     # 개별적인 코드가 들어가는 부분 / 각각의 html에서 서로 다른 코드가 들어가는 부분
-    {% endblock %}{% endraw %}
+    {% raw %}{% endblock %}{% endraw %}
     # 코드가 공통으로 들어가는 부분
 ```  
 
