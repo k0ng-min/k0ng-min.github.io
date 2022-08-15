@@ -11,7 +11,10 @@ sidebar:
 
 
 
-# 블로그 사용법
+
+# 블로그 사용법  
+
+
 * [github로 이동](https://github.com/k0ng-min/k0ng-min.github.io)
 * [github 블로그 만들기](https://www.youtube.com/watch?v=ACzFIAOsfpM&t=617s) 영상 참조
 * Ctrl + r을 누르면 새로고침
