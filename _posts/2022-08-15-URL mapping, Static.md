@@ -112,8 +112,8 @@ sidebar:
         
     2. static 파일을 head 부분에 link하기
 ```python
-   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
-   <img src="{% static 'img/logo.png'%}">
+   <link rel="stylesheet" type="text/css" href="{% raw %}{% static 'css/style.css'%}{% endraw %}">
+   <img src="{% raw %}{% static 'img/logo.png'%}{% endraw %}">
    #  static 폴더 안의 css 디렉토리 안의 style.css를 갖고 온다는 의미
 ```   
 
