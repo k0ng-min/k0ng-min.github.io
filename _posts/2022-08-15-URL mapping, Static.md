@@ -1,4 +1,26 @@
+---
+layout: single
+title: "URL mapping, Static"
+category: "django"
+tag: [django, url mapping, static]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
+
+
 # URL Mapping  
+
+
+
+> Jekyll에서 사용되는 liquid는 {{와 }}를 escape 문자로 사용하는데, <br/>
+> md문서에 {{, }}가 있는 경우 에러 메시지를 출력함.<br/>
+> 따라서 다음과 같이 여는 중괄호가 시작하기 전에 raw를, 뒤에는 endraw를 추가하는 해결책을 강구함<br/>
+> [[Github블로그/Jekyll] Liquid Exception: Liquid syntax error 해결](https://iamheesoo.github.io/blog/gitblog-sol-jekyll02)
+
+
 
 ## Django Application 생성  
 
@@ -15,7 +37,7 @@
 * html과 렌더링할 수 있도록 함수 작성하기
 ```python
    def index(request):
-	return render(request, 'home.html')
+	  return render(request, 'home.html')
     # 앱 안에 있는 home.html로 렌더링해주기
 ```  
 
@@ -84,7 +106,7 @@
 ## static 파일 불러오기
 
 * home.html에 static 파일을 불러오기 위해서는 
-    1. home.html 맨상단에 {% load static %} 추가하기 
+    1. home.html 맨상단에 {% raw %}{% load static %}{% endraw %} 추가하기 
         * {% %}를 template 언어라고 칭함  
         
         
