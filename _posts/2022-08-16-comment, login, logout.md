@@ -1,3 +1,14 @@
+---
+layout: single
+title: "comment, login, logout"
+category: "django"
+tag: [django, comment, login, logout]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # comment  
 
 * 댓글 구현하기  
