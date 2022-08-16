@@ -1,3 +1,14 @@
+---
+layout: single
+title: "pagination/database"
+category: "django"
+tag: [django, pagination, database, MARIA DB]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # pagination  
 
 
