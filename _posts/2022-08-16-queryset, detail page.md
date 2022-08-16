@@ -2,7 +2,7 @@
 layout: single
 title: "QuerySet, detail page, FILE Upload-Media "
 category: "django"
-tag: [django, QuerySet, media, database]
+tag: [django, QuerySet, media, database, photo]
 toc: true
 author_profile: false
 sidebar:
