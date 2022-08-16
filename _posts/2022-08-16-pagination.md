@@ -90,7 +90,7 @@ sidebar:
 ```python
     # settings.py
     DATABASES = {% raw %}{
-        'default':{% raw %}{
+        'default':{
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'mysql',
             'user': 'root',
@@ -98,7 +98,7 @@ sidebar:
             # 다음 password는 root password를 가져다 씀
             'HOST': '127.0.0.1',
             'PORT': '3306',
-        }{% endraw %}
+        }
     }{% endraw %}
     # settings.py에서 secretkey와 databases는 절대 외부에 노출해서는 안됨
     # 그래서 mysettings.py라는 임의의 파일을 만들어 secretkey와 databases을 settings.py에서 import를 통해 적용시킴
