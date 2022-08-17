@@ -121,24 +121,24 @@ sidebar:
 * MEDIA_URL= 사진 같은 것들을 업로드한다면 접근할 수 있는 URL경로  
 
 
-
-    > # urls.py<br/>
-    > urlpatterns += static(settins.MEDIA_URL, document_root=settings.MEDIA-ROOT)<br/>
-    > # media 파일에 접근할 수 있는 url도 추가해주어야 함<br/>
-
+```python
+    # urls.py
+    urlpatterns += static(settins.MEDIA_URL, document_root=settings.MEDIA-ROOT)
+    # media 파일에 접근할 수 있는 url도 추가해주어야 함
+``` 
 <urls.py>
 * 맨 위에 from django.conf import settings 와 from django.conf.urls.static import static 쓰기  
 
 
-
-    > # models.py<br/>
-    > class Blog(models.Model):<br/>
-    >    title = models.CharField()<br/>
-    >    body = models.TextField()<br/>
-    >    photo = models.ImageField(blank=True, null=True, upload_to='blog_photo')<br/>
-    > # 사진은 업로드하든 안하든 상관없음<br/>
-    > # makemigration 해주기<br/>
-
+```python
+    # models.py
+    class Blog(models.Model):
+        title = models.CharField()
+        body = models.TextField()
+        photo = models.ImageField(blank=True, null=True, upload_to='blog_photo')
+    # 사진은 업로드하든 안하든 상관없음
+    # makemigration 해주기
+```   
 <models.py>
 * blogproject에 media 폴더를 추가하고  그 안에 blog_photo 추가하기  
 
@@ -152,11 +152,11 @@ sidebar:
 * detail 창에서 사진 보기
 1. detail.html에 내용 추가하기
 
-
-    > # index.py<br/>
-    > {% raw %}{% if blog_detail.photo %}{% endraw %}<br/>
-    >    {% raw %}{{ blog_detail.photo.url }}{% endraw %}<br/>
-    >    <img src = "{% raw %}{{ blog_detail.photo.url }}{% endraw %}" alt="" height="600"><br/>
-    > {% raw %}{% endif %}{% endraw %}<br/>
-    > # url 대신 path를 쓰면 파일 경로가 보임<br/>
-
+```python
+    # index.py
+    {% raw %}{% if blog_detail.photo %}{% endraw %}
+        {% raw %}{{ blog_detail.photo.url }}{% endraw %}
+        <img src = "{% raw %}{{ blog_detail.photo.url }}{% endraw %}" alt="" height="600">
+    {% raw %}{% endif %}{% endraw %}
+    # url 대신 path를 쓰면 파일 경로가 보임
+```  
