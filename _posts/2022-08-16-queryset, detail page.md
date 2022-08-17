@@ -116,7 +116,6 @@ sidebar:
     MEDIA_ROOT = os.path.join( BASE_DIR, 'media')
     MEDIA_URL = '/media/'
 ``` 
-<settings.py>
 * MEDIA_ROOT = 사용자가 업로드한 파일이 저장되는 경로
 * MEDIA_URL= 사진 같은 것들을 업로드한다면 접근할 수 있는 URL경로  
 
@@ -126,7 +125,7 @@ sidebar:
     urlpatterns += static(settins.MEDIA_URL, document_root=settings.MEDIA-ROOT)
     # media 파일에 접근할 수 있는 url도 추가해주어야 함
 ``` 
-<urls.py>
+
 * 맨 위에 from django.conf import settings 와 from django.conf.urls.static import static 쓰기  
 
 
@@ -139,7 +138,7 @@ sidebar:
     # 사진은 업로드하든 안하든 상관없음
     # makemigration 해주기
 ```   
-<models.py>
+
 * blogproject에 media 폴더를 추가하고  그 안에 blog_photo 추가하기  
 
 
