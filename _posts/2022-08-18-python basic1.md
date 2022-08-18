@@ -1,3 +1,14 @@
+---
+layout: single
+title: "python basic1"
+category: "django"
+tag: [python, tuple dictionary, boolen, variable]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # 튜플 자료형
 
 ## 리스트와 튜플의 차이점은?
