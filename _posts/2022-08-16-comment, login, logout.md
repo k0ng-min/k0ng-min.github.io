@@ -83,8 +83,9 @@ sidebar:
             
         return redirect('detail', blog_id)
 ```   
-    3. detail.html에 댓글의 목록 노출시키기
-```python
+    3. detail.html에 댓글의 목록 노출시키기  
+    
+```html
     # detail.html
     {% raw %}{% for comment in blog_detail.comment_set.all %}{% endraw %}
     <p>{% raw %}{{ comment }}{% endraw %}</p>
@@ -94,16 +95,16 @@ sidebar:
 
 # login/logout  
 
-1. 로그인과 로그아웃을 관장하는 account라는 app을 만들어주기  
+* 로그인과 로그아웃을 관장하는 account라는 app을 만들어주기  
 
 
-2. settings.py에 app을 등록하고 index.html 위에 로그인 버튼 만들기 <a href = “{% raw %}{% url ‘login’ %}{% endraw %}”>로그인</a>  
+* settings.py에 app을 등록하고 index.html 위에 로그인 버튼 만들기 <a href = “{% raw %}{% url ‘login’ %}{% endraw %}”>로그인</a>  
 
 
-3. urls.py에 from accounts import views as accounts_views추가하고 path(’login/’, accounts_views.login, name=’login’), 넣기  
+* urls.py에 from accounts import views as accounts_views추가하고 path(’login/’, accounts_views.login, name=’login’), 넣기  
 
 
-4. account 앱 안의 views.py에 login함수 추가하기  
+* account 앱 안의 views.py에 login함수 추가하기  
 
 ```python
     # views.py
@@ -119,7 +120,7 @@ sidebar:
 ```   
 
 
-5. login.html 추가하기 
+* login.html 추가하기 
 
 ```python
     <form action="{% raw %}{% url 'login' %}{% endraw %}" method="POST">
@@ -129,12 +130,14 @@ sidebar:
         <br/>
         <input type='submit' value='로그인'>
     </form>
-```    
+```     
 
 
-6. 데이터베이스에 이미 저장된 계정인지 확인
+* 데이터베이스에 이미 저장된 계정인지 확인
     * views.py에 from django.contrib import auth추가
-    * views.py에 from django.contrib.auth.models import user 추가
+    * views.py에 from django.contrib.auth.models import user 추가  
+
+
 ```python
     from django.shortcuts import render, redirect
     from django.contrib import auth
@@ -158,7 +161,7 @@ sidebar:
 ```    
 
 
-7. index.html에 다음 코드를 작성하여 로그인 여부 확인하기
+* index.html에 다음 코드를 작성하여 로그인 여부 확인하기
 
 ```python
     # index.html
@@ -170,7 +173,7 @@ sidebar:
 ```   
 
 
-8. 로그인 한 사람만 새 글 작성, 로그아웃 버튼이 보이도록 하기
+* 로그인 한 사람만 새 글 작성, 로그아웃 버튼이 보이도록 하기
 
 ```python
     {% raw %}{% if user.is_authenticated %}{% endraw %}
@@ -179,7 +182,7 @@ sidebar:
 ```   
 
 
-9. 로그아웃 버튼은 index.html에 로그인 버튼처럼 설정한 후 urls.py에서 account_views.login으로 링크하고 views.py안에 logout함수 만들기 
+* 로그아웃 버튼은 index.html에 로그인 버튼처럼 설정한 후 urls.py에서 account_views.login으로 링크하고 views.py안에 logout함수 만들기 
 ```python
     def logout(request):
         auth.logout(request)
