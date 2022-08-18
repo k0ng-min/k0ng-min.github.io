@@ -1,3 +1,15 @@
+---
+layout: single
+title: "python basic2"
+category: "python"
+tag: [python, list, string]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
+
 # 자료형  
 
 ## 자료형이란  
