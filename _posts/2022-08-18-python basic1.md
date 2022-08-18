@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "python basic1"
-category: "django"
+category: "python"
 tag: [python, tuple dictionary, boolen, variable]
 toc: true
 author_profile: false
