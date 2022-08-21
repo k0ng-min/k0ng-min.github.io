@@ -1,3 +1,14 @@
+---
+layout: single
+title: "javascript 기본문법"
+category: "javascript"
+tag: [javascript, variable, array, string, if, for, while]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # javascript로 웹서비스 만들기  
 
 **javascript를 사용하는 방법**
