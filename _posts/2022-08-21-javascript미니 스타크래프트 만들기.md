@@ -1,3 +1,14 @@
+---
+layout: single
+title: "javascript미니 스타크래프트 만들기"
+category: "javascript"
+tag: [javascript, jquery, function]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # 미니 스타크래프트 만들기
 
 1. **jQuery**
