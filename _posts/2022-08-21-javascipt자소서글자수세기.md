@@ -1,4 +1,15 @@
-## 자소서 글자 수 계산기
+---
+layout: single
+title: "javascript자소서 글자 수 세기"
+category: "javascript"
+tag: [javascript, DOM, lens]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
+# 자소서 글자 수 계산기
 
 document object model(DOM) : 웹 화면을 구성하는 html 코드를 쉽게 접근할 수 있도록 만든 모듈
 
