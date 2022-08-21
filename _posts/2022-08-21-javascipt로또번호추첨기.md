@@ -1,3 +1,14 @@
+---
+layout: single
+title: "javascript로또번호추첨기"
+category: "javascript"
+tag: [javascript, random, array, for]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # 로또 번호 추첨기
 
 역할 : 1부터 45개의 공 중 6개 뽑기
