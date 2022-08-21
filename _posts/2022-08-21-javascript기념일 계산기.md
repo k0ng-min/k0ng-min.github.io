@@ -1,3 +1,14 @@
+---
+layout: single
+title: "javascript기념일 계산기"
+category: "javascript"
+tag: [javascript, object]
+toc: true
+author_profile: false
+sidebar:
+    nav: "docs"
+---
+
 # 기념일 계산기
 
 1. **객체(object)**
